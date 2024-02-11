@@ -1,0 +1,66 @@
+.card-wrap{
+
+    h2{
+        max-width: 50%;
+        color: var(--white);
+
+        span{
+            font-size: 40px;
+            color:red;
+        }
+    }
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black3);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+.card1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .status{
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .pass{
+        background-color: var(--greenback);
+        color:var(--green);
+    }
+
+    .fail{
+        background-color: var(--orangeback);
+        color:var(--orange);        
+    }
+    .id{
+        color:white;
+    }
+
+    .name{
+        width: 80px;
+        color:white;
+    }
+
+    .date{
+        color:white;
+    }
+
+    
+}
+.logo{
+    color:var(--purple);
+    font-size: 22px;
+    padding: 20px;
+}
+}

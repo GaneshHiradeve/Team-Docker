@@ -1,0 +1,128 @@
+nav {
+    background: var(--black3);
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+    width: 100%;
+
+    label.logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 53px;
+        font-weight: bold;
+
+        span {
+            color: red;
+        }
+    }
+
+    .butDiv{
+        // float: right;
+        padding: 30px;
+
+        .btn{
+            padding: 7px 20px;
+            border-radius: 20px;
+            outline: none;
+            margin-left: 30px;
+            color:black;
+            font-weight: 500;
+            font-size: 15px;
+            border: 3px solid white;
+        }
+    
+        .btn:hover{
+            color:white;
+            background-color: black;
+            transition: all .3s;
+        }
+    }
+    ul {
+        float: right;
+        margin-right: 0px;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 60px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 8px 15px;
+                margin: 2px -38px 2px -32px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                border-bottom: 1.5px solid transparent;
+                transition: all 0.9s ease;
+
+                &.active,
+                &:hover {
+                    border-color: var(--pink);
+                    color: var(--pink);
+                }
+            }
+        }
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    @media (max-width: 1253px) {
+        .checkbtn {
+            display: block;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            background: #2c3e50;
+            margin-top: 75px;
+            top: 0px;
+            left: -100%;
+            transition: all .8s;
+            text-align: center;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: 20px;
+
+                    &:hover {
+                        background: none;
+                        color: orange;
+                    }
+                }
+            }
+        }
+
+        #check:checked ~ ul {
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .con {
+        width: 50%;
+        display: flex;
+        float: right;
+        margin-left: 800px;
+    }
+}

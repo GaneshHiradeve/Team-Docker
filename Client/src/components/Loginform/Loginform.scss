@@ -1,0 +1,147 @@
+.wrapper{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../../images/institution.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.container {
+    // position: relative;
+
+    max-width: 700px;
+    width: 100%;
+    background: var(--black);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    // margin: 500px 0;
+    header {
+      font-size: 1.5rem;
+      color: var(--white);
+      font-weight: 500;
+      text-align: center;
+    }
+  
+    .form {
+      margin-top: 30px;
+      
+      .input-box {
+        width: 100%;
+        margin-top: 20px;
+  
+        label {
+          color: var(--white);
+        }
+  
+        input, select {
+          position: relative;
+          height: 50px;
+          width: 100%;
+          outline: none;
+          font-size: 1rem;
+          color: #707070;
+          margin-top: 8px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          padding: 0 15px;
+  
+          &:focus {
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+  
+      .column {
+        display: flex;
+        column-gap: 15px;
+      }
+  
+      .gender-box {
+        margin-top: 20px;
+  
+        h3 {
+          color: var(--white);
+          font-size: 1rem;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
+  
+        .gender-option, .gender {
+          display: flex;
+          align-items: center;
+          column-gap: 50px;
+          flex-wrap: wrap;
+        }
+  
+        .gender {
+          column-gap: 5px;
+  
+          input, label {
+            cursor: pointer;
+          }
+  
+          label {
+            color: #707070;
+          }
+  
+          input {
+            accent-color: rgb(130, 106, 251);
+          }
+        }
+      }
+  
+      .address input, .select-box {
+        margin-top: 15px;
+  
+        select {
+          height: 100%;
+          width: 100%;
+          outline: none;
+          border: none;
+          color: #707070;
+          font-size: 1rem;
+        }
+      }
+  
+      button {
+        height: 55px;
+        width: 100%;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 30px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: rgb(130, 106, 251);
+        border-radius: 12px;
+  
+        &:hover {
+          background: rgb(88, 56, 250);
+        }
+      }
+    }
+  
+    .btn {
+      border-radius: 12px;
+    }
+  
+    .select {
+      margin-top: 22px;
+    }
+  
+    // Responsive
+    @media screen and (max-width: 500px) {
+      .form .column {
+        flex-wrap: wrap;
+      }
+  
+      .gender-option, .gender {
+        row-gap: 15px;
+      }
+    }
+  }
